@@ -320,14 +320,30 @@
 
     <protected-broadcast android:name="android.internal.policy.action.BURN_IN_PROTECTION" />
     <protected-broadcast android:name="android.app.action.SYSTEM_UPDATE_POLICY_CHANGED" />
+    <protected-broadcast android:name="com.sonymobile.intent.action.DEACTIVATE_TETHERING"/>
     <protected-broadcast android:name="android.app.action.DEVICE_OWNER_CHANGED" />
 
     <protected-broadcast android:name="android.net.action.SHOW_NETWORK_POLICY_NOTIFICATION" />
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.LOCATION_ALWAYS_ON_CONFIRMED"/>
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.LOCATION_ALWAYS_ON_DECLINED"/>
+    <protected-broadcast android:name="com.sonymobile.intent.action.CONFIGURE_SINGLE_SIGN_ON"/>
+    <protected-broadcast android:name="com.sonyericsson.intent.action.stk.user_activity"/>
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.SYSTEM_UI_DISABLED_STATE_CHANGED"/>
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.RESTRICT_CHANGE_HOME_APP_POLICY_CHANGED"/>
+    <protected-broadcast android:name="com.sonymobile.intent.action.CLEAR_CLIPBOARD_DATA"/>
+    <protected-broadcast android:name="com.sonyericsson.system.intent.action.HEADSET_PLUG"/>
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.SCREEN_SLEEP_DISABLED_STATE_CHANGED"/>
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.VOLUME_KEY_DISABLED_STATE_CHANGED"/>
+    
     <!-- ====================================================================== -->
     <!--                          RUNTIME PERMISSIONS                           -->
     <!-- ====================================================================== -->
     <eat-comment />
 
+    <protected-broadcast android:name="com.sonyericsson.system.intent.action.CABLE_UNPLUGGED"/>
+    <protected-broadcast android:name="com.sonymobile.googleanalyticsproxy.intent.action.SEND_EVENT"/>
+    <protected-broadcast android:name="com.sonymobile.intent.action.CAR_MIRRORLINK_MODE"/>
+    
     <!-- ====================================================================== -->
     <!-- Permissions for accessing user's contacts including personal profile   -->
     <!-- ====================================================================== -->
@@ -358,6 +374,10 @@
         android:description="@string/permdesc_writeContacts"
         android:protectionLevel="dangerous" />
 
+    <protected-broadcast android:name="com.sonymobile.enterprise.intent.action.PACKETFILTER_RESULT"/>
+    <protected-broadcast android:name="com.sonymobile.wallpaper.intent.action.ACTION_HOME_WALLPAPER_CHANGED"/>
+    <protected-broadcast android:name="com.sonymobile.intent.action.IMS_SERVICE_STATE_CHANGED"/>
+    
     <!-- ====================================================================== -->
     <!-- Permissions for accessing user's calendar                              -->
     <!-- ====================================================================== -->
@@ -1132,6 +1152,8 @@
         android:description="@string/permdesc_flashlight"
         android:protectionLevel="normal" />
 
+    <permission android:description="@string/permdesc_fm_radio_receiver" android:label="@string/permlab_fm_radio_receiver" android:name="com.stericsson.permission.FM_RADIO_RECEIVER" android:permissionGroup="android.permission-group.HARDWARE_CONTROLS" android:protectionLevel="normal"/>
+    
     <!-- Allows using PowerManager WakeLocks to keep processor from sleeping or screen
          from dimming.
          <p>Protection level: normal
@@ -1804,6 +1826,8 @@
     <permission android:name="android.permission.SIGNAL_PERSISTENT_PROCESSES"
         android:protectionLevel="signature|privileged|development" />
 
+    <permission android:description="@string/permdesc_sonyEnterpriseApi" android:label="@string/permlab_sonyEnterpriseApi" android:name="com.sonymobile.permission.ENTERPRISE_API" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="normal"/>
+    
     <!-- ==================================== -->
     <!-- Private permissions                  -->
     <!-- ==================================== -->
@@ -2443,6 +2467,9 @@
     <permission android:name="android.permission.COPY_PROTECTED_DATA"
         android:protectionLevel="signature" />
 
+    <permission android:description="@string/permdesc_vendorButton" android:label="@string/permlab_vendorButton" android:name="com.sonyericsson.permission.VENDOR_BUTTON" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sonyericsson.permission.USER_ACTIVITY_ANSWER" android:protectionLevel="signature"/>
+    
     <!-- @SystemApi Internal permission protecting access to the encryption methods
         @hide
     -->
@@ -2464,7 +2491,13 @@
          third party apps. @hide -->
     <permission android:name="android.permission.MODIFY_NETWORK_ACCOUNTING"
         android:protectionLevel="signature|privileged" />
-
+    
+    <permission android:name="com.sonymobile.permission.SMIME_KEYSTORE" android:protectionLevel="system|signature"/>
+    <permission android:description="@string/permdesc_runtime_skin" android:label="@string/permlab_runtime_skin" android:name="com.sonymobile.permission.RUNTIME_SKIN" android:protectionLevel="normal"/>
+    <permission android:name="com.sonymobile.permission.WRITE_PERSISTENT_STORAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.sonymobile.permission.TRIMAREA" android:protectionLevel="signature"/>
+    <permission android:description="@string/permdesc_system_ui_visibility_extensions" android:label="@string/permlab_system_ui_visibility_extensions" android:name="com.sonymobile.permission.SYSTEM_UI_VISIBILITY_EXTENSIONS" android:protectionLevel="signatureOrSystem"/>
+    
     <!-- C2DM permission.
          @hide Used internally.
      -->
@@ -2684,10 +2717,21 @@
     <permission android:name="android.permission.DISPATCH_NFC_MESSAGE"
                 android:protectionLevel="signature|privileged" />
 
+    <permission android:name="com.sonymobile.googleanalyticsproxy.permission.GOOGLE_ANALYTICS" android:protectionLevel="signature"/>
+    <permission android:name="com.sonymobile.permission.ACCESS_TPM" android:protectionLevel="system|signature"/>
+    
     <!-- The system process is explicitly the only one allowed to launch the
          confirmation UI for full backup/restore -->
     <uses-permission android:name="android.permission.CONFIRM_FULL_BACKUP"/>
 
+    <permission android:name="com.sonyericsson.permission.CREDENTIALMANAGER" android:protectionLevel="system|signature"/>
+    <permission android:name="com.sonymobile.permission.LCD_POWER_SAVE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.sonymobile.enterprise.permission.INSTALLATION_SERVICE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.sonymobile.permission.PACKET_FILTER" android:protectionLevel="signature"/>
+    <permission android:description="@string/permdesc_reconfigureSimlock" android:label="@string/permlab_reconfigureSimlock" android:name="com.sonymobile.permission.RECONFIGURE_SIMLOCK" android:permissionGroup="android.permission-group.PHONE" android:protectionLevel="dangerous"/>
+    <permission android:name="com.sonymobile.enterprise.service.permission.SYNC_MISCTA" android:protectionLevel="system|signature"/>
+    <permission android:name="com.sonymobile.wallpaper.permission.LISTEN_TO_HOME_WALLPAPER_CHANGED" android:protectionLevel="signature"/>
+    
     <application android:process="system"
                  android:persistent="true"
                  android:hasCode="false"
@@ -2884,7 +2928,8 @@
                     android:priority="100" >
                 <!-- For Checkin, Settings, etc.: action=MASTER_CLEAR -->
                 <action android:name="android.intent.action.MASTER_CLEAR" />
-
+                <action android:name="com.sonymobile.intent.action.MASTER_CLEAR_KEEP_MEDIA"/>
+                
                 <!-- MCS always uses REMOTE_INTENT: category=MASTER_CLEAR -->
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <category android:name="android.intent.category.MASTER_CLEAR" />
@@ -2922,7 +2967,9 @@
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
-
+        <meta-data android:name="com.sonymobile.runtimeskinning.SKIN_PERMISSIONS" android:resource="@xml/somc_skin_permissions"/>
+        <meta-data android:name="com.sonymobile.runtimeskinning.LAF_VERSION" android:value="2"/>
+    
     </application>
 
 </manifest>

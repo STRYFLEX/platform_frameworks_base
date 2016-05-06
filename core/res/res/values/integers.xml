@@ -23,4 +23,13 @@
     <integer name="button_pressed_animation_delay">100</integer>
     <integer name="disabled_alpha_animation_duration">100</integer>
     <integer name="dock_enter_exit_duration">250</integer>
+
+   	<integer name="orientationboost_timeout_param">750</integer>
+    <integer name="orientationboost_schedboost_param">0x1e01</integer>
+    <integer name="orientationboost_cpuboost_param">0x2fe</integer>
+    <integer name="orientationboost_pcdisbl_param">0x1ffe</integer>
+    <integer name="config_enable_wfc_default_value">0</integer>
+    <integer name="config_wfc_preferred_network_mode_default_value">2</integer>
+    <integer name="config_in_call_notification_relative_volume">100</integer>
+    <integer name="config_wifi_scan_interval_wfd_connected">86400000</integer>
 </resources>

@@ -116,4 +116,18 @@
   
   <!-- Accessibility action identifier for {@link android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction#ACTION_CONTEXT_CLICK}. -->
   <item type="id" name="accessibilityActionContextClick" />
+
+    <item type="id" name="global_actions_double_item_group1">false</item>
+    <item type="id" name="global_actions_double_item_icon1">false</item>
+    <item type="id" name="global_actions_double_item_message1">false</item>
+    <item type="id" name="global_actions_double_item_group2">false</item>
+    <item type="id" name="global_actions_double_item_icon2">false</item>
+    <item type="id" name="global_actions_double_item_message2">false</item>
+    <item type="id" name="certificate_name">false</item>
+    <item type="id" name="package_content">false</item>
+    <item type="id" name="emergency_master_reset_title">false</item>
+    <item type="id" name="emergency_master_reset_btn">false</item>
+    <item type="id" name="emergency_master_reset_exit_btn">false</item>
+    <item type="id" name="parent_view">false</item>
+    <item type="id" name="picture">false</item>
 </resources>

@@ -63,7 +63,7 @@ easier.
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.DeviceDefault.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.DeviceDefault.SearchResult.Subtitle</item>
 
-        <item name="textAppearanceButton">@style/TextAppearance.DeviceDefault.Widget.Button</item>
+        <item name="textAppearanceButton">@style/TextAppearance.DeviceDefault.Button</item>
 
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small</item>
@@ -178,7 +178,7 @@ easier.
         <item name="actionBarStyle">@style/Widget.DeviceDefault.ActionBar.Solid</item>
         <item name="actionModePopupWindowStyle">@style/Widget.DeviceDefault.PopupWindow.ActionMode</item>
 
-        <item name="buttonBarStyle">@style/DeviceDefault.ButtonBar</item>
+        <item name="buttonBarStyle">@style/Widget.DeviceDefault.ButtonBar</item>
         <item name="segmentedButtonStyle">@style/DeviceDefault.SegmentedButton</item>
 
         <item name="searchDialogTheme">@style/Theme.DeviceDefault.SearchBar</item>
@@ -200,30 +200,80 @@ easier.
 
         <item name="mediaRouteButtonStyle">@style/Widget.DeviceDefault.MediaRouteButton</item>
 
+        <item name="windowBackground">@drawable/somc_bg_dark_v2</item>
+        <item name="spinnerStyle">?dropDownSpinnerStyle</item>
+        <item name="listChoiceIndicatorSingle">@drawable/somc_btn_radio_dark</item>
+        <item name="listChoiceIndicatorMultiple">@drawable/somc_btn_check_dark</item>
+        <item name="textSelectHandleLeft">@drawable/somc_textselection_handle_left_dark</item>
+        <item name="textSelectHandleRight">@drawable/somc_textselection_handle_right_dark</item>
+        <item name="textSelectHandle">@drawable/somc_textselection_handle_middle_dark</item>
+        <item name="actionModeBackground">@drawable/somc_cab_top_bg_dark</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        <item name="activatedBackgroundIndicator">@drawable/somc_activated_background_dark</item>
+        <item name="selectableItemBackground">@drawable/somc_item_bg_ripple_dark</item>
+        <item name="buttonBarButtonStyle">@style/Widget.DeviceDefault.Button.ButtonBar.AlertDialog</item>
+        <item name="detailsElementBackground">@drawable/somc_details_panel_bg_dark</item>
+        <item name="editTextColor">@color/somc_text_color_edittext_dark_selector</item>
+        <item name="editTextBackground">@drawable/somc_edit_text_bg_dark</item>
+        <item name="textCursorDrawable">@drawable/somc_textcursor_dark</item>
+        <item name="actionBarItemBackground">@drawable/somc_btn_actionbar_ripple_dark</item>
+        <item name="actionModeSplitBackground">@drawable/somc_cab_bottom_bg_dark</item>
+        <item name="colorButtonNormal">@color/somc_btn_bg_color_dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.DeviceDefault.ActionBar</item>
+        <item name="colorPrimary">@color/somc_color_primary_dark</item>
+        <item name="colorPrimaryDark">@color/somc_color_dark_primary_dark</item>
+        <item name="colorAccent">@color/somc_color_accent_dark</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.DeviceDefault.PopupMenu.Overflow</item>
+        <item name="windowDrawsSystemBarBackgrounds">false</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/somc_item_bg_borderless_dark</item>
+        <item name="searchViewStyle">@style/Widget.DeviceDefault.SearchView</item>
+        <item name="actionBarPopupTheme">?popupTheme</item>
+        <item name="toolbarStyle">@style/Widget.DeviceDefault.Toolbar</item>
+        <item name="alertDialogCenterButtons">@bool/somc_center_alert_dialog_buttons</item>
+        <item name="panelMenuListTheme">@style/Theme.DeviceDefault.CompactMenu</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.DeviceDefault</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList.DeviceDefault</item>
+        <item name="toastFrameBackground">@drawable/somc_toast_dark</item>
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
+        <item name="somcSkinnableTranslucentBars">true</item>
     </style>
 
     <!-- Variant of {@link #Theme_DeviceDefault} with no action bar -->
-    <style name="Theme.DeviceDefault.NoActionBar" parent="Theme.Material.NoActionBar"  />
-
+    <style name="Theme.DeviceDefault.NoActionBar" parent="@style/Theme.DeviceDefault">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault} with no action bar and no status bar.  This theme
          sets {@link android.R.attr#windowFullscreen} to true.  -->
-    <style name="Theme.DeviceDefault.NoActionBar.Fullscreen" parent="Theme.Material.NoActionBar.Fullscreen"  />
-
+    <style name="Theme.DeviceDefault.NoActionBar.Fullscreen" parent="@style/Theme.DeviceDefault.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowFullscreen">true</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault} with no action bar and no status bar and
     extending in to overscan region.  This theme
     sets {@link android.R.attr#windowFullscreen} and {@link android.R.attr#windowOverscan}
     to true. -->
-    <style name="Theme.DeviceDefault.NoActionBar.Overscan" parent="Theme.Material.NoActionBar.Overscan"  />
-
+    <style name="Theme.DeviceDefault.NoActionBar.Overscan" parent="@style/Theme.DeviceDefault.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowFullscreen">true</item>
+        <item name="windowOverscan">true</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault} that has no title bar and translucent
          system decor.  This theme sets {@link android.R.attr#windowTranslucentStatus} and
          {@link android.R.attr#windowTranslucentNavigation} to true. -->
-    <style name="Theme.DeviceDefault.NoActionBar.TranslucentDecor" parent="Theme.Material.NoActionBar.TranslucentDecor"  />
-
+    <style name="Theme.DeviceDefault.NoActionBar.TranslucentDecor" parent="@style/Theme.DeviceDefault.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowTranslucentStatus">true</item>
+        <item name="windowTranslucentNavigation">true</item>
+    </style>
+    
     <!-- DeviceDefault theme for dialog windows and activities. This changes the window to be
     floating (not fill the entire screen), and puts a frame around its contents. You can set this
     theme on an activity if you would like to make an activity that looks like a Dialog. -->
-    <style name="Theme.DeviceDefault.Dialog" parent="Theme.Material.Dialog" >
+    <style name="Theme.DeviceDefault.Dialog" parent="Theme.DeviceDefault.BaseDialog" >
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
         <item name="windowAnimationStyle">@style/Animation.DeviceDefault.Dialog</item>
 
@@ -236,14 +286,23 @@ easier.
 
     <!-- Variant of {@link #Theme_DeviceDefault_Dialog} that has a nice minimum width for a
     regular dialog. -->
-    <style name="Theme.DeviceDefault.Dialog.MinWidth" parent="Theme.Material.Dialog.MinWidth" />
+    <style name="Theme.DeviceDefault.Dialog.MinWidth" parent="Theme.DeviceDefault.Dialog" >
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
 
     <!-- Variant of {@link #Theme_DeviceDefault_Dialog} without an action bar -->
-    <style name="Theme.DeviceDefault.Dialog.NoActionBar" parent="Theme.Material.Dialog.NoActionBar" />
+    <style name="Theme.DeviceDefault.Dialog.NoActionBar" parent="Theme.DeviceDefault.Dialog" >
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
     <!-- Variant of {@link #Theme_DeviceDefault_Dialog_NoActionBar} that has a nice minimum width
     for a regular dialog. -->
-    <style name="Theme.DeviceDefault.Dialog.NoActionBar.MinWidth" parent="Theme.Material.Dialog.NoActionBar.MinWidth" />
+    <style name="Theme.DeviceDefault.Dialog.NoActionBar.MinWidth" parent="Theme.DeviceDefault.Dialog.NoActionBar" >
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
 
     <!-- Variant of Theme.DeviceDefault.Dialog that has a fixed size. -->
     <style name="Theme.DeviceDefault.Dialog.FixedSize">
@@ -263,45 +322,78 @@ easier.
 
     <!-- DeviceDefault theme for a window that will be displayed either full-screen on smaller
     screens (small, normal) or as a dialog on larger screens (large, xlarge). -->
-    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="Theme.Material.DialogWhenLarge"  />
-
+    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@style/Theme.DeviceDefault" />
+    
     <!-- DeviceDefault theme for a window without an action bar that will be displayed either
     full-screen on smaller screens (small, normal) or as a dialog on larger screens (large,
     xlarge). -->
-    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="Theme.Material.DialogWhenLarge.NoActionBar"  />
-
+    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="@style/Theme.DeviceDefault.NoActionBar" />
+    
     <!-- DeviceDefault theme for a presentation window on a secondary display. -->
-    <style name="Theme.DeviceDefault.Dialog.Presentation" parent="Theme.Material.Dialog.Presentation" />
-
+    <style name="Theme.DeviceDefault.Dialog.Presentation" parent="@style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+    
     <!-- DeviceDefault theme for panel windows. This removes all extraneous window
     decorations, so you basically have an empty rectangle in which to place your content. It makes
     the window floating, with a transparent background, and turns off dimming behind the window. -->
-    <style name="Theme.DeviceDefault.Panel" parent="Theme.Material.Panel"  />
-
+    <style name="Theme.DeviceDefault.Panel" parent="@style/Theme.DeviceDefault">
+        <item name="windowBackground">@color/transparent</item>
+        <item name="windowFrame">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowIsFloating">true</item>
+        <item name="windowIsTranslucent">true</item>
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowAnimationStyle">@null</item>
+        <item name="backgroundDimEnabled">false</item>
+        <item name="colorBackgroundCacheHint">@null</item>
+    </style>
+    
     <!-- DeviceDefault theme for windows that want to have the user's selected wallpaper appear
     behind them. -->
-    <style name="Theme.DeviceDefault.Wallpaper" parent="Theme.Material.Wallpaper"  />
-
+    <style name="Theme.DeviceDefault.Wallpaper" parent="@style/Theme.DeviceDefault">
+        <item name="windowBackground">@color/transparent</item>
+        <item name="windowShowWallpaper">true</item>
+        <item name="colorBackgroundCacheHint">@null</item>
+    </style>
+    
     <!-- DeviceDefault theme for windows that want to have the user's selected wallpaper appear
     behind them and without an action bar. -->
-    <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="Theme.Material.Wallpaper.NoTitleBar"  />
-
+    <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@style/Theme.DeviceDefault.Wallpaper">
+        <item name="windowNoTitle">true</item>
+    </style>
+    
     <!-- DeviceDefault style for input methods, which is used by the
          {@link android.inputmethodservice.InputMethodService} class.-->
-    <style name="Theme.DeviceDefault.InputMethod" parent="Theme.Material.InputMethod"  />
-
+    <style name="Theme.DeviceDefault.InputMethod" parent="@style/Theme.DeviceDefault.Light.Panel">
+        <item name="windowAnimationStyle">@style/Animation.InputMethod</item>
+        <item name="imeFullscreenBackground">@drawable/screen_background_selector_light</item>
+        <item name="imeExtractEnterAnimation">@anim/input_method_extract_enter</item>
+        <item name="imeExtractExitAnimation">@anim/input_method_extract_exit</item>
+    </style>
+    
     <!-- DeviceDefault style for input methods, which is used by the
          {@link android.service.voice.VoiceInteractionSession} class.-->
-    <style name="Theme.DeviceDefault.VoiceInteractionSession" parent="Theme.Material.VoiceInteractionSession" >
-
+    <style name="Theme.DeviceDefault.VoiceInteractionSession" parent="@style/Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor">
+        <item name="windowBackground">@color/transparent</item>
+        <item name="windowIsTranslucent">true</item>
+        <item name="windowAnimationStyle">@style/Animation</item>
+        <item name="colorBackgroundCacheHint">@null</item>
     </style>
-    <style name="Theme.DeviceDefault.Dialog.Alert" parent="Theme.Material.Dialog.Alert">
+    
+    <style name="Theme.DeviceDefault.Dialog.Alert" parent="@style/Theme.DeviceDefault.Dialog.BaseAlert">
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
     </style>
 
-    <style name="Theme.DeviceDefault.SearchBar" parent="Theme.Material.SearchBar" />
-    <style name="Theme.DeviceDefault.Dialog.NoFrame" parent="Theme.Material.Dialog.NoFrame" />
-
+    <style name="Theme.DeviceDefault.SearchBar" parent="@style/Theme.DeviceDefault.Panel" />
+    <style name="Theme.DeviceDefault.Dialog.NoFrame" parent="@style/Theme.DeviceDefault.Dialog">
+        <item name="windowBackground">@color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowIsTranslucent">true</item>
+        <item name="windowAnimationStyle">@null</item>
+        <item name="backgroundDimEnabled">false</item>
+        <item name="windowCloseOnTouchOutside">false</item>
+        <item name="windowElevation">0.0dip</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault} with a light-colored style -->
     <style name="Theme.DeviceDefault.Light" parent="Theme.Material.Light" >
         <!-- Text styles -->
@@ -317,7 +409,7 @@ easier.
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.DeviceDefault.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.DeviceDefault.SearchResult.Subtitle</item>
 
-        <item name="textAppearanceButton">@style/TextAppearance.DeviceDefault.Widget.Button</item>
+        <item name="textAppearanceButton">@style/TextAppearance.DeviceDefault.Light.Button</item>
 
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small</item>
@@ -350,7 +442,7 @@ easier.
 
         <!-- Text selection handle attributes -->
         <item name="textSelectHandleWindowStyle">@style/Widget.DeviceDefault.TextSelectHandle</item>
-        <item name="textSuggestionsWindowStyle">@style/Widget.DeviceDefault.Light.TextSuggestionsPopupWindow</item>
+        <item name="textSuggestionsWindowStyle">@style/Widget.DeviceDefault.TextSuggestionsPopupWindow</item>
 
         <!-- Widget styles -->
         <item name="absListViewStyle">@style/Widget.DeviceDefault.Light.AbsListView</item>
@@ -430,7 +522,7 @@ easier.
         <item name="actionBarStyle">@style/Widget.DeviceDefault.Light.ActionBar.Solid</item>
         <item name="actionModePopupWindowStyle">@style/Widget.DeviceDefault.Light.PopupWindow.ActionMode</item>
 
-        <item name="buttonBarStyle">@style/DeviceDefault.Light.ButtonBar</item>
+        <item name="buttonBarStyle">@style/Widget.DeviceDefault.Light.ButtonBar</item>
         <item name="segmentedButtonStyle">@style/DeviceDefault.Light.SegmentedButton</item>
 
         <item name="searchDialogTheme">@style/Theme.DeviceDefault.Light.SearchBar</item>
@@ -449,34 +541,104 @@ easier.
 
         <item name="mediaRouteButtonStyle">@style/Widget.DeviceDefault.Light.MediaRouteButton</item>
 
+        <item name="colorBackground">@color/somc_color_background_light</item>
+        <item name="windowBackground">@drawable/somc_bg_light_v2</item>
+        <item name="spinnerStyle">?dropDownSpinnerStyle</item>
+        <item name="listChoiceIndicatorSingle">@drawable/somc_btn_radio_light</item>
+        <item name="listChoiceIndicatorMultiple">@drawable/somc_btn_check_light</item>
+        <item name="textSelectHandleLeft">@drawable/somc_textselection_handle_left_light</item>
+        <item name="textSelectHandleRight">@drawable/somc_textselection_handle_right_light</item>
+        <item name="textSelectHandle">@drawable/somc_textselection_handle_middle_light</item>
+        <item name="actionModeBackground">@drawable/somc_cab_top_bg_light</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        <item name="activatedBackgroundIndicator">@drawable/somc_activated_background_light</item>
+        <item name="selectableItemBackground">@drawable/somc_item_bg_ripple_light</item>
+        <item name="buttonBarButtonStyle">@style/Widget.DeviceDefault.Light.Button.ButtonBar.AlertDialog</item>
+        <item name="detailsElementBackground">@drawable/somc_details_panel_bg_light</item>
+        <item name="editTextColor">@color/somc_text_color_edittext_light_selector</item>
+        <item name="editTextBackground">@drawable/somc_edit_text_bg_light</item>
+        <item name="textCursorDrawable">@drawable/somc_textcursor_light</item>
+        <item name="actionBarItemBackground">@drawable/somc_btn_actionbar_ripple_light</item>
+        <item name="actionModeSplitBackground">@drawable/somc_cab_bottom_bg_light</item>
+        <item name="colorButtonNormal">@color/somc_btn_bg_color_light</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.DeviceDefault.ActionBar</item>
+        <item name="colorPrimary">@color/somc_color_primary_light</item>
+        <item name="colorPrimaryDark">@color/somc_color_dark_primary_light</item>
+        <item name="colorAccent">@color/somc_color_accent_light</item>
+        <item name="switchStyle">@style/Widget.DeviceDefault.Light.CompoundButton.Switch</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.DeviceDefault.Light.PopupMenu.Overflow</item>
+        <item name="windowDrawsSystemBarBackgrounds">false</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/somc_item_bg_borderless_light</item>
+        <item name="searchViewStyle">@style/Widget.DeviceDefault.Light.SearchView</item>
+        <item name="actionBarPopupTheme">?popupTheme</item>
+        <item name="toolbarStyle">@style/Widget.DeviceDefault.Light.Toolbar</item>
+        <item name="alertDialogCenterButtons">@bool/somc_center_alert_dialog_buttons</item>
+        <item name="panelMenuListTheme">@style/Theme.DeviceDefault.Light.CompactMenu</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.DeviceDefault</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList.DeviceDefault</item>
+        <item name="toastFrameBackground">@drawable/somc_toast_light</item>
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
+        <item name="somcSystemUiLight">true</item>
+        <item name="somcSkinnableTranslucentBars">true</item>
     </style>
 
     <!-- Variant of the DeviceDefault (light) theme that has a solid (opaque) action bar with an
     inverse color profile. -->
-    <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="Theme.Material.Light.DarkActionBar" />
-
+    <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@style/Theme.DeviceDefault.Light">
+        <item name="actionBarStyle">@style/Widget.DeviceDefault.ActionBar.Solid</item>
+        <item name="actionDropDownStyle">@style/Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar.Inverse</item>
+        <item name="actionButtonStyle">@style/Widget.DeviceDefault.ActionButton</item>
+        <item name="actionModeBackground">@drawable/somc_cab_top_bg_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.DeviceDefault.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.DeviceDefault.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.DeviceDefault.ActionBar.TabText</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.DeviceDefault.ActionButton.Overflow</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.DeviceDefault.ActionButton.CloseMode</item>
+        <item name="actionModeStyle">@style/Widget.DeviceDefault.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarItemBackground">@drawable/somc_btn_actionbar_ripple_dark</item>
+        <item name="actionModeSplitBackground">@drawable/somc_cab_bottom_bg_dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.DeviceDefault.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.DeviceDefault.Light</item>
+        <item name="somcSystemUiLight">false</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault_Light} with no action bar -->
-    <style name="Theme.DeviceDefault.Light.NoActionBar" parent="Theme.Material.Light.NoActionBar"  />
-
+    <style name="Theme.DeviceDefault.Light.NoActionBar" parent="@style/Theme.DeviceDefault.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault_Light} with no action bar and no status bar.
          This theme sets {@link android.R.attr#windowFullscreen} to true.  -->
-    <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="Theme.Material.Light.NoActionBar.Fullscreen"  />
-
+    <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="@style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowFullscreen">true</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault_Light} with no action bar and no status bar
     and extending in to overscan region.  This theme
     sets {@link android.R.attr#windowFullscreen} and {@link android.R.attr#windowOverscan}
     to true. -->
-    <style name="Theme.DeviceDefault.Light.NoActionBar.Overscan" parent="Theme.Material.Light.NoActionBar.Overscan" />
-
+    <style name="Theme.DeviceDefault.Light.NoActionBar.Overscan" parent="@style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowFullscreen">true</item>
+        <item name="windowOverscan">true</item>
+    </style>
+    
     <!-- Variant of {@link #Theme_DeviceDefault_Light} that has no title bar and translucent
          system decor.  This theme sets {@link android.R.attr#windowTranslucentStatus} and
          {@link android.R.attr#windowTranslucentNavigation} to true. -->
-    <style name="Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" parent="Theme.Material.Light.NoActionBar.TranslucentDecor" />
-
+    <style name="Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" parent="@style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowTranslucentStatus">true</item>
+        <item name="windowTranslucentNavigation">true</item>
+    </style>
+    
     <!-- DeviceDefault light theme for dialog windows and activities. This changes the window to be
     floating (not fill the entire screen), and puts a frame around its contents. You can set this
     theme on an activity if you would like to make an activity that looks like a Dialog.-->
-    <style name="Theme.DeviceDefault.Light.Dialog" parent="Theme.Material.Light.Dialog" >
+    <style name="Theme.DeviceDefault.Light.Dialog" parent="Theme.DeviceDefault.Light.BaseDialog" >
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault.Light</item>
         <item name="windowAnimationStyle">@style/Animation.DeviceDefault.Dialog</item>
 
@@ -489,14 +651,23 @@ easier.
 
     <!-- Variant of {@link #Theme_DeviceDefault_Light_Dialog} that has a nice minimum width for a
     regular dialog. -->
-    <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="Theme.Material.Light.Dialog.MinWidth" />
+    <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="@style/Theme.DeviceDefault.Light.Dialog">
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
 
      <!-- Variant of {@link #Theme_DeviceDefault_Light_Dialog} without an action bar -->
-    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="Theme.Material.Light.Dialog.NoActionBar" />
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="@style/Theme.DeviceDefault.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
     <!-- Variant of {@link #Theme_DeviceDefault_Light_Dialog_NoActionBar} that has a nice minimum
     width for a regular dialog. -->
-    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="Theme.Material.Light.Dialog.NoActionBar.MinWidth" />
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="@style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
 
     <!-- Variant of Theme.DeviceDefault.Dialog that has a fixed size. -->
     <style name="Theme.DeviceDefault.Light.Dialog.FixedSize">
@@ -516,32 +687,44 @@ easier.
 
     <!-- DeviceDefault light theme for a window that will be displayed either full-screen on smaller
     screens (small, normal) or as a dialog on larger screens (large, xlarge). -->
-    <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="Theme.Material.Light.DialogWhenLarge"  />
-
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="@style/Theme.DeviceDefault.Light" />
+    
     <!-- DeviceDefault light theme for a window without an action bar that will be displayed either
     full-screen on smaller screens (small, normal) or as a dialog on larger screens (large,
     xlarge). -->
-    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="Theme.Material.Light.DialogWhenLarge.NoActionBar"  />
-
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="@style/Theme.DeviceDefault.Light.NoActionBar" />
+    
     <!-- DeviceDefault light theme for a presentation window on a secondary display. -->
-    <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="Theme.Material.Light.Dialog.Presentation" />
-
+    <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" />
+    
     <!-- DeviceDefault light theme for panel windows. This removes all extraneous window
     decorations, so you basically have an empty rectangle in which to place your content. It makes
     the window floating, with a transparent background, and turns off dimming behind the window. -->
-    <style name="Theme.DeviceDefault.Light.Panel" parent="Theme.Material.Light.Panel"  />
-
-    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="Theme.Material.Light.Dialog.Alert">
+    <style name="Theme.DeviceDefault.Light.Panel" parent="@style/Theme.DeviceDefault.Light">
+        <item name="windowBackground">@color/transparent</item>
+        <item name="windowFrame">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowIsFloating">true</item>
+        <item name="windowIsTranslucent">true</item>
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowAnimationStyle">@null</item>
+        <item name="backgroundDimEnabled">false</item>
+        <item name="colorBackgroundCacheHint">@null</item>
+    </style>
+    
+    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@style/Theme.DeviceDefault.Light.Dialog.BaseAlert">
         <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault.Light</item>
     </style>
 
-    <style name="Theme.DeviceDefault.Light.SearchBar" parent="Theme.Material.Light.SearchBar" />
-
+    <style name="Theme.DeviceDefault.Light.SearchBar" parent="@style/Theme.DeviceDefault.Light.Panel" />
+    
     <!-- DeviceDefault theme for a window that should look like the Settings app.  -->
-    <style name="Theme.DeviceDefault.Settings" parent="Theme.Material.Settings" />
-
+    <style name="Theme.DeviceDefault.Settings" parent="@style/Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.DeviceDefault.ActionBar.Settings</item>
+    </style>
+    
     <!-- Theme used for the intent picker activity. -->
-    <style name="Theme.DeviceDefault.Resolver" parent="Theme.Material.Light">
+    <style name="Theme.DeviceDefault.Resolver" parent="@style/Theme.DeviceDefault.Light">
         <item name="windowIsTranslucent">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowBackground">@color/transparent</item>

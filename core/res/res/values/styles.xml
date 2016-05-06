@@ -1386,4 +1386,254 @@ please see styles_device_defaults.xml.
         <item name="padding">16dp</item>
     </style>
 
+    <style name="PreferenceFragment.DeviceDefault" parent="@style/PreferenceFragment.Material">
+        <item name="paddingStart">0.0dip</item>
+        <item name="paddingEnd">0.0dip</item>
+    </style>
+    <style name="PreferenceFragmentList.DeviceDefault" parent="@style/PreferenceFragmentList">
+        <item name="paddingStart">@dimen/somc_preference_fragment_padding_side</item>
+        <item name="paddingEnd">@dimen/somc_preference_fragment_padding_side</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.SearchResult.Title" parent="@style/TextAppearance.Material.SearchResult.Title">
+        <item name="textColor">@color/primary_text_material_light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.SearchResult.Subtitle" parent="@style/TextAppearance.Material.SearchResult.Subtitle">
+        <item name="textColor">@color/primary_text_material_light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Button" parent="@style/TextAppearance.Material.Widget.Button">
+        <item name="textColor">@color/somc_btn_text_color_dark</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.Button" parent="@style/TextAppearance.Material.Widget.Button">
+        <item name="textColor">@color/somc_btn_text_color_light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Widget.Switch" parent="@style/TextAppearance.Material.Widget.Switch">
+        <item name="textColor">@color/somc_switch_text_color_dark</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.Widget.Switch" parent="@style/TextAppearance.DeviceDefault.Widget.Switch">
+        <item name="textColor">@color/somc_switch_text_color_light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.Widget.TabWidget" parent="@style/TextAppearance.DeviceDefault.Button">
+        <item name="textColor">@color/somc_tab_text_color_light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.EditText" parent="@style/TextAppearance.Material.Medium.Inverse">
+        <item name="textColorHint">@color/somc_text_color_hint_dark</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.Light.EditText" parent="@style/TextAppearance.Material.Medium.Inverse">
+        <item name="textColorHint">@color/somc_text_color_hint_light</item>
+    </style>
+    <style name="Widget.DeviceDefault.Button.ButtonBar.AlertDialog" parent="@style/Widget.Material.Button.Borderless.Colored">
+        <item name="minWidth">64.0dip</item>
+        <item name="minHeight">@dimen/alert_dialog_button_bar_height</item>
+        <item name="maxLines">2</item>
+    </style>
+    <style name="Widget.DeviceDefault.ButtonBar" parent="@style/Widget.Material.ButtonBar" />
+    <style name="Widget.DeviceDefault.ButtonBar.AlertDialog" parent="@style/Widget.Material.ButtonBar.AlertDialog" />
+    <style name="Widget.DeviceDefault.SearchView" parent="@style/Widget.Material.SearchView" />
+    <style name="Animation.DeviceDefault.TextSelectHandle" parent="@style/Widget.TextSelectHandle">
+        <item name="windowEnterAnimation">@anim/fast_fade_in</item>
+        <item name="windowExitAnimation">@anim/fast_fade_out</item>
+    </style>
+    <style name="Widget.DeviceDefault.CompoundButton" parent="@style/Widget.Material.CompoundButton">
+        <item name="background">@drawable/somc_compoundbutton_bg_dark</item>
+    </style>
+    <style name="Widget.DeviceDefault.Toolbar" parent="@style/Widget.Material.Toolbar">
+        <item name="navigationButtonStyle">@style/Widget.DeviceDefault.Toolbar.Button.Navigation</item>
+    </style>
+    <style name="Widget.DeviceDefault.Toolbar.Button.Navigation" parent="@style/Widget.Material.Toolbar.Button.Navigation">
+        <item name="background">@drawable/somc_btn_actionbar_ripple_dark</item>
+    </style>
+    <style name="Widget.DeviceDefault.QuickContactBadge" parent="@style/Widget.QuickContactBadge">
+        <item name="src">@drawable/somc_contact_picture</item>
+    </style>
+    <style name="Widget.DeviceDefault.QuickContactBadgeSmall" parent="@style/Widget.QuickContactBadgeSmall">
+        <item name="src">@drawable/somc_contact_picture</item>
+    </style>
+    <style name="Widget.DeviceDefault.PopupMenu.Overflow" parent="@style/Widget.DeviceDefault.PopupMenu">
+        <item name="dropDownHorizontalOffset">-4.0dip</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Button.ButtonBar.AlertDialog" parent="@style/Widget.Material.Light.Button.Borderless.Colored">
+        <item name="minWidth">64.0dip</item>
+        <item name="minHeight">@dimen/alert_dialog_button_bar_height</item>
+        <item name="maxLines">2</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.ButtonBar" parent="@style/Widget.DeviceDefault.ButtonBar" />
+    <style name="Widget.DeviceDefault.Light.ButtonBar.AlertDialog" parent="@style/Widget.DeviceDefault.ButtonBar.AlertDialog" />
+    <style name="Widget.DeviceDefault.Light.SearchView" parent="@style/Widget.Material.Light.SearchView" />
+    <style name="Widget.DeviceDefault.Light.CompoundButton" parent="@style/Widget.DeviceDefault.CompoundButton">
+        <item name="background">@drawable/somc_compoundbutton_bg_light</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.CompoundButton.Switch" parent="@style/Widget.DeviceDefault.CompoundButton.Switch">
+        <item name="background">@drawable/somc_switch_bg_light</item>
+        <item name="thumb">@drawable/somc_switch_thumb_light</item>
+        <item name="switchTextAppearance">@style/TextAppearance.DeviceDefault.Light.Widget.Switch</item>
+        <item name="track">@drawable/somc_switch_track_light</item>
+        <item name="showText">@bool/somc_switch_show_text</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Spinner.Inverse" parent="@style/Widget.DeviceDefault.Light.Spinner">
+        <item name="background">@drawable/somc_btn_dropdown_compounded_bg_dark</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Spinner.DropDown.Inverse" parent="@style/Widget.DeviceDefault.Light.Spinner.DropDown">
+        <item name="background">@drawable/somc_btn_dropdown_compounded_bg_dark</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar.Inverse" parent="@style/Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar">
+        <item name="background">@drawable/somc_btn_dropdown_compounded_bg_dark</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Toolbar" parent="@style/Widget.Material.Toolbar">
+        <item name="navigationButtonStyle">@style/Widget.DeviceDefault.Toolbar.Button.Navigation</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Toolbar.Button.Navigation" parent="@style/Widget.Material.Toolbar.Button.Navigation">
+        <item name="background">@drawable/somc_btn_actionbar_ripple_light</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.PopupMenu.Overflow" parent="@style/Widget.DeviceDefault.Light.PopupMenu">
+        <item name="dropDownHorizontalOffset">-4.0dip</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+    <style name="Widget.DeviceDefault.ActionBar.Settings" parent="@style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="contentInsetStart">@dimen/somc_actionbar_contentInsetStart</item>
+    </style>
+    <style name="Animation.DeviceDefault" parent="@style/Animation.Material" />
+    <style name="Animation.DeviceDefault.Popup" parent="@style/Animation.Material.Popup" />
+    <style name="DialogWindowTitleBackground.DeviceDefault" parent="@style/DialogWindowTitleBackground.Material" />
+    <style name="DialogWindowTitleBackground.DeviceDefault.Light" parent="@style/DialogWindowTitleBackground.DeviceDefault" />
+    <style name="ThemeOverlay.DeviceDefault" parent="@style/ThemeOverlay" />
+    <style name="ThemeOverlay.DeviceDefault.Light" parent="@style/ThemeOverlay.Material.Light">
+        <item name="colorBackground">@color/somc_color_background_light</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        <item name="selectableItemBackground">@drawable/somc_item_bg_ripple_light</item>
+        <item name="colorPrimary">@color/somc_color_primary_light</item>
+        <item name="colorPrimaryDark">@color/somc_color_dark_primary_light</item>
+        <item name="colorAccent">@color/somc_color_accent_light</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/somc_item_bg_borderless_light</item>
+    </style>
+    <style name="ThemeOverlay.DeviceDefault.ActionBar" parent="@style/ThemeOverlay.DeviceDefault">
+        <item name="colorControlNormal">?textColorPrimary</item>
+        <item name="searchViewStyle">@style/Widget.Material.SearchView.ActionBar</item>
+    </style>
+    <style name="ThemeOverlay.DeviceDefault.Dark.ActionBar" parent="@style/ThemeOverlay.Material.Dark.ActionBar">
+        <item name="autoCompleteTextViewStyle">@style/Widget.DeviceDefault.Light.AutoCompleteTextView</item>
+        <item name="checkboxStyle">@style/Widget.DeviceDefault.CompoundButton.CheckBox</item>
+        <item name="progressBarStyle">@style/Widget.DeviceDefault.ProgressBar</item>
+        <item name="progressBarStyleHorizontal">@style/Widget.DeviceDefault.ProgressBar.Horizontal</item>
+        <item name="progressBarStyleSmall">@style/Widget.DeviceDefault.ProgressBar.Small</item>
+        <item name="progressBarStyleLarge">@style/Widget.DeviceDefault.ProgressBar.Large</item>
+        <item name="seekBarStyle">@style/Widget.DeviceDefault.SeekBar</item>
+        <item name="ratingBarStyle">@style/Widget.DeviceDefault.RatingBar</item>
+        <item name="ratingBarStyleSmall">@style/Widget.DeviceDefault.RatingBar.Small</item>
+        <item name="radioButtonStyle">@style/Widget.DeviceDefault.CompoundButton.RadioButton</item>
+        <item name="spinnerStyle">?dropDownSpinnerStyle</item>
+        <item name="starStyle">@style/Widget.DeviceDefault.CompoundButton.Star</item>
+        <item name="progressBarStyleSmallTitle">@style/Widget.DeviceDefault.ProgressBar.Small.Title</item>
+        <item name="ratingBarStyleIndicator">@style/Widget.DeviceDefault.RatingBar.Indicator</item>
+        <item name="listChoiceIndicatorSingle">@drawable/somc_btn_radio_dark</item>
+        <item name="listChoiceIndicatorMultiple">@drawable/somc_btn_check_dark</item>
+        <item name="progressBarStyleInverse">@style/Widget.DeviceDefault.ProgressBar.Inverse</item>
+        <item name="progressBarStyleSmallInverse">@style/Widget.DeviceDefault.ProgressBar.Small.Inverse</item>
+        <item name="progressBarStyleLargeInverse">@style/Widget.DeviceDefault.ProgressBar.Large.Inverse</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.DeviceDefault.Light.SearchResult.Subtitle</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.DeviceDefault.Light.SearchResult.Title</item>
+        <item name="textSelectHandleLeft">@drawable/somc_textselection_handle_left_dark</item>
+        <item name="textSelectHandleRight">@drawable/somc_textselection_handle_right_dark</item>
+        <item name="textSelectHandle">@drawable/somc_textselection_handle_middle_dark</item>
+        <item name="textSelectHandleWindowStyle">@style/Widget.DeviceDefault.TextSelectHandle</item>
+        <item name="dropDownSpinnerStyle">@style/Widget.DeviceDefault.Light.Spinner.DropDown.Inverse</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        <item name="selectableItemBackground">@drawable/somc_item_bg_ripple_dark</item>
+        <item name="borderlessButtonStyle">@style/Widget.DeviceDefault.Button.Borderless</item>
+        <item name="editTextColor">@color/somc_text_color_edittext_dark_selector</item>
+        <item name="editTextBackground">@drawable/somc_edit_text_bg_dark</item>
+        <item name="textCursorDrawable">@drawable/somc_textcursor_dark</item>
+        <item name="textSuggestionsWindowStyle">@style/Widget.DeviceDefault.TextSuggestionsPopupWindow</item>
+        <item name="colorPrimary">@color/somc_color_primary_dark</item>
+        <item name="colorPrimaryDark">@color/somc_color_dark_primary_dark</item>
+        <item name="colorAccent">@color/somc_color_accent_dark</item>
+        <item name="switchStyle">@style/Widget.DeviceDefault.CompoundButton.Switch</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/somc_item_bg_borderless_dark</item>
+        <item name="searchDialogTheme">@style/Theme.DeviceDefault.SearchBar</item>
+    </style>
+    <style name="Theme.DeviceDefault.Voice" parent="@style/Theme.DeviceDefault.Dialog">
+        <item name="windowAnimationStyle">@style/Animation.VoiceActivity</item>
+        <item name="backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.DeviceDefault.Light.Voice" parent="@style/Theme.DeviceDefault.Light.Dialog">
+        <item name="windowAnimationStyle">@style/Animation.VoiceActivity</item>
+        <item name="backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.DeviceDefault.CompactMenu" parent="@style/Theme.DeviceDefault">
+        <item name="listViewStyle">@style/Widget.DeviceDefault.ListView</item>
+        <item name="windowAnimationStyle">@style/Animation.DropDownUp</item>
+        <item name="background">@null</item>
+        <item name="itemTextAppearance">?textAppearanceMedium</item>
+        <item name="windowElevation">@dimen/floating_window_z</item>
+    </style>
+    <style name="Theme.DeviceDefault.Light.CompactMenu" parent="@style/Theme.DeviceDefault.Light">
+        <item name="listViewStyle">@style/Widget.DeviceDefault.Light.ListView</item>
+        <item name="windowAnimationStyle">@style/Animation.DropDownUp</item>
+        <item name="background">@null</item>
+        <item name="itemTextAppearance">?textAppearanceMedium</item>
+        <item name="windowElevation">@dimen/floating_window_z</item>
+    </style>
+    <style name="Theme.DeviceDefault.BaseDialog" parent="@style/Theme.DeviceDefault">
+        <item name="colorBackground">?colorBackgroundFloating</item>
+        <item name="windowBackground">@drawable/somc_dialog_bg_dark</item>
+        <item name="windowFrame">@null</item>
+        <item name="windowIsFloating">true</item>
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
+        <item name="windowTitleBackgroundStyle">@style/DialogWindowTitleBackground.DeviceDefault</item>
+        <item name="windowAnimationStyle">@style/Animation.DeviceDefault.Dialog</item>
+        <item name="listDivider">@null</item>
+        <item name="windowSoftInputMode">adjustPan</item>
+        <item name="colorBackgroundCacheHint">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowCloseOnTouchOutside">@bool/config_closeDialogWhenTouchOutside</item>
+        <item name="listPreferredItemPaddingLeft">24.0dip</item>
+        <item name="listPreferredItemPaddingRight">24.0dip</item>
+        <item name="listPreferredItemPaddingStart">24.0dip</item>
+        <item name="listPreferredItemPaddingEnd">24.0dip</item>
+        <item name="windowElevation">@dimen/floating_window_z</item>
+        <item name="preferencePanelStyle">@style/PreferencePanel.Dialog</item>
+    </style>
+    <style name="Theme.DeviceDefault.Dialog.BaseAlert" parent="@style/Theme.DeviceDefault.Dialog">
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="Theme.DeviceDefault.Light.BaseDialog" parent="@style/Theme.DeviceDefault.Light">
+        <item name="colorBackground">?colorBackgroundFloating</item>
+        <item name="windowBackground">@drawable/somc_dialog_bg_light</item>
+        <item name="windowFrame">@null</item>
+        <item name="windowIsFloating">true</item>
+        <item name="windowContentOverlay">@null</item>
+        <item name="windowTitleStyle">@style/DialogWindowTitle.DeviceDefault.Light</item>
+        <item name="windowTitleBackgroundStyle">@style/DialogWindowTitleBackground.DeviceDefault.Light</item>
+        <item name="windowAnimationStyle">@style/Animation.DeviceDefault.Dialog</item>
+        <item name="listDivider">@null</item>
+        <item name="windowSoftInputMode">adjustPan</item>
+        <item name="colorBackgroundCacheHint">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowCloseOnTouchOutside">@bool/config_closeDialogWhenTouchOutside</item>
+        <item name="listPreferredItemPaddingLeft">24.0dip</item>
+        <item name="listPreferredItemPaddingRight">24.0dip</item>
+        <item name="listPreferredItemPaddingStart">24.0dip</item>
+        <item name="listPreferredItemPaddingEnd">24.0dip</item>
+        <item name="windowElevation">@dimen/floating_window_z</item>
+        <item name="preferencePanelStyle">@style/PreferencePanel.Dialog</item>
+    </style>
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.DarkActionBar" parent="@style/Theme.DeviceDefault.Light.DarkActionBar" />
+    <style name="Theme.DeviceDefault.Light.Dialog.BaseAlert" parent="@style/Theme.DeviceDefault.Light.Dialog">
+        <item name="windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="Theme.DeviceDefault.Settings.NoActionBar" parent="@style/Theme.DeviceDefault.Light.NoActionBar" />
+    <style name="Theme.DeviceDefault.Settings.BaseDialog" parent="@style/Theme.DeviceDefault.Light.BaseDialog" />
+    <style name="Theme.DeviceDefault.Settings.Dialog" parent="@style/Theme.DeviceDefault.Settings.BaseDialog" />
+    <style name="Theme.DeviceDefault.Settings.Dialog.BaseAlert" parent="@style/Theme.DeviceDefault.Light.Dialog.BaseAlert" />
+    <style name="Theme.DeviceDefault.Settings.Dialog.Alert" parent="@style/Theme.DeviceDefault.Settings.Dialog.BaseAlert" />
+    <style name="Theme.DeviceDefault.Settings.DialogWhenLarge" parent="@style/Theme.DeviceDefault.Light.DialogWhenLarge.DarkActionBar" />
+    <style name="Theme.DeviceDefault.Settings.DialogWhenLarge.NoActionBar" parent="@style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" />
+    <style name="Theme.DeviceDefault.Settings.Dialog.Presentation" parent="@style/Theme.DeviceDefault.Light.Dialog.Presentation" />
+    <style name="Theme.DeviceDefault.Settings.SearchBar" parent="@style/Theme.DeviceDefault.Light.SearchBar" />
+    <style name="Theme.DeviceDefault.Settings.CompactMenu" parent="@style/Theme.DeviceDefault.Light.CompactMenu" />
 </resources>

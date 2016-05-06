@@ -401,4 +401,14 @@
 
     <item type="dimen" format="integer" name="time_picker_column_start_material">0</item>
     <item type="dimen" format="integer" name="time_picker_column_end_material">1</item>
+
+    <dimen name="circular_display_mask_offset">0.0px</dimen>
+    <dimen name="roundMagnificationRadius">55.0dip</dimen>
+    <dimen name="rectangularMagnificationWidth">179.0dip</dimen>
+    <dimen name="rectangularMagnificationHeight">74.0dip</dimen>
+    <dimen name="magnifier_selection_handle_offset_y">44.0dip</dimen>
+    <dimen name="somc_dimension_btn_base_elevation">1.0dip</dimen>
+    <dimen name="somc_dimension_btn_press_elevation">2.0dip</dimen>
+    <dimen name="somc_actionbar_contentInsetStart">72.0dip</dimen>
+    <dimen name="somc_preference_fragment_padding_side">0.0dip</dimen>
 </resources>

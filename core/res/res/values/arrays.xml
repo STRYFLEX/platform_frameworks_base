@@ -449,4 +449,65 @@
         <item>@color/Red_700</item>
     </array>
 
+    <string-array name="share_priority_extra_weights">
+        <item>com.sonymobile.socialengine.plugins.facebook_sharefrwk,3.4</item>
+        <item>com.sonymobile.social.apps,3.3</item>
+    </string-array>
+    
+    <string-array name="special_language_codes">
+        <item>bs_BA</item>
+        <item>in_ID</item>
+        <item>jv_ID</item>
+        <item>su_ID</item>
+        <item>sr_RS</item>
+        <item>tl_PH</item>
+    </string-array>
+    
+    <string-array name="special_language_names">
+        <item>Bosanski</item>
+        <item>Bahasa Indonesia</item>
+        <item>Jawa</item>
+        <item>Basa Sunda</item>
+        <item>Srpski</item>
+        <item>Tagalog</item>
+    </string-array>
+    
+    <array name="config_packagesBlacklist" />
+ 
+    <array name="config_single_pdp_detection_fail_causes" />
+ 
+    <string-array name="config_runtime_skin_blacklist">
+        <item>com.android.vending</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.android.packageinstaller</item>
+    </string-array>
+ 
+    <string-array name="config_trustedInstallersPackageList">
+        <item>com.sonyericsson.updatecenter</item>
+    </string-array>
+ 
+    <array name="system_server_preloaded_drawables">
+        <item>@drawable/somc_bg_dark</item>
+        <item>@drawable/somc_bg_light</item>
+    </array>
+ 
+    <array name="preloaded_skin_drawables">
+        <item>@drawable/somc_bg_dark</item>
+        <item>@drawable/somc_bg_light</item>
+    </array>
+ 
+    <string-array name="ps3_controller_names">
+        <item>PLAYSTATION(R)3 Controller</item>
+        <item>Sony PLAYSTATION(R)3 Controller</item>
+        <item>Sony Computer Entertainment Wireless Controller</item>
+    </string-array>
+ 
+    <integer-array name="launchboost_params">
+        <item>0x2fe</item>
+        <item>0x3fe</item>
+        <item>0x4fe</item>
+        <item>0x5fe</item>
+        <item>0x702</item>
+    </integer-array>
+
 </resources>

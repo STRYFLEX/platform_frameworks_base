@@ -442,6 +442,7 @@ please see themes_device_defaults.xml.
         <item name="lightRadius">@dimen/light_radius</item>
         <item name="ambientShadowAlpha">@dimen/ambient_shadow_alpha</item>
         <item name="spotShadowAlpha">@dimen/spot_shadow_alpha</item>
+        <item name="somcSkinnableTranslucentBars">false</item>
     </style>
 
     <!-- Variant of {@link #Theme} with no title bar -->
@@ -556,6 +557,7 @@ please see themes_device_defaults.xml.
         <item name="floatingToolbarItemBackgroundDrawable">@drawable/item_background_material_light</item>
         <item name="floatingToolbarOpenDrawable">@drawable/ic_menu_moreoverflow_material_light</item>
         <item name="floatingToolbarPopupBackgroundDrawable">@drawable/floating_popup_background_light</item>
+        <item name="somcSkinnableTranslucentBars">false</item>
     </style>
 
     <!-- Variant of {@link #Theme_Light} with no title bar -->

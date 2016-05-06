@@ -105,7 +105,7 @@
     <color name="keyguard_text_color_decline">#fe0a5a</color>
 
     <!-- keyguard clock -->
-    <color name="lockscreen_clock_background">#ffffffff</color>
+    <color name="lockscreen_clock_background">#ff000000</color>
     <color name="lockscreen_clock_foreground">#ffffffff</color>
     <color name="lockscreen_clock_am_pm">#ffffffff</color>
     <color name="lockscreen_owner_info">#ff9a9a9a</color>
@@ -125,8 +125,8 @@
 
     <color name="micro_text_light">#434343</color>
 
-    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
-    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="notification_template_icon_bg">#44000000</drawable>
+    <drawable name="notification_template_icon_low_bg">#22000000</drawable>
     <drawable name="notification_template_divider">#29000000</drawable>
     <drawable name="notification_template_divider_media">#29ffffff</drawable>
 
@@ -176,4 +176,179 @@
     <color name="Red_800">#ffb93221</color>
 
     <color name="chooser_service_row_background_color">#fff5f5f5</color>
+
+    <color name="somc_color_primary_light">#ff1f669b</color>
+    <color name="somc_color_dark_primary_light">#ff1a5f89</color>
+    <color name="somc_color_accent_light">#ff0cbdc4</color>
+    <color name="somc_color_primary_dark">#ff4f6778</color>
+    <color name="somc_color_dark_primary_dark">#ff3c4f5e</color>
+    <color name="somc_color_accent_dark">#ff84f4f4</color>
+    <color name="somc_color_background_light">#fffafafa</color>
+    <color name="somc_color_component_ripple_dark">@color/ripple_material_dark</color>
+    <color name="somc_color_component_ripple_light">@color/ripple_material_light</color>
+    <color name="somc_color_btn_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_btn_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_btn_borderless_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_btn_borderless_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_btn_toggle_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_btn_toggle_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_compound_btn_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_compound_btn_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_radiobutton_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_radiobutton_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_checkbox_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_checkbox_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_switch_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_switch_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_star_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_star_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_seekbar_thumb_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_seekbar_thumb_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_item_bg_borderless_ripple_dark">@color/ripple_material_dark</color>
+    <color name="somc_color_item_bg_borderless_ripple_light">@color/ripple_material_light</color>
+    <color name="somc_color_item_bg_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_item_bg_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_btn_dropdown_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_btn_dropdown_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_tab_ripple_dark">@color/somc_color_component_ripple_dark</color>
+    <color name="somc_color_tab_ripple_light">@color/somc_color_component_ripple_light</color>
+    <color name="somc_color_actionbar_btn_ripple_dark">@color/somc_color_item_bg_borderless_ripple_dark</color>
+    <color name="somc_color_actionbar_btn_ripple_light">@color/somc_color_item_bg_borderless_ripple_light</color>
+    <color name="somc_color_dropdown_panel_dark">@color/background_material_dark</color>
+    <color name="somc_color_dropdown_panel_light">@color/background_material_light</color>
+    <color name="somc_color_dialog_full_dark">@color/background_floating_material_dark</color>
+    <color name="somc_color_dialog_full_light">@color/background_floating_material_light</color>
+    <color name="somc_color_btn_dark">@color/button_material_dark</color>
+    <color name="somc_color_btn_light">@color/button_material_light</color>
+    <color name="somc_color_btn_toggle_dark">@color/somc_color_btn_dark</color>
+    <color name="somc_color_btn_toggle_light">@color/somc_color_btn_light</color>
+    <color name="somc_color_btn_star_off_dark">@color/secondary_text_default_material_dark</color>
+    <color name="somc_color_btn_star_off_light">@color/secondary_text_default_material_light</color>
+    <color name="somc_color_dropdown_unselected_dark">@color/secondary_text_default_material_dark</color>
+    <color name="somc_color_dropdown_unselected_light">@color/secondary_text_default_material_light</color>
+    <color name="somc_color_textselection_handle_dark">@color/accent_material_dark</color>
+    <color name="somc_color_textselection_handle_light">@color/accent_material_light</color>
+    <color name="somc_color_textcursor_dark">@color/somc_color_textselection_handle_dark</color>
+    <color name="somc_color_textcursor_light">@color/somc_color_textselection_handle_light</color>
+    <color name="somc_text_color_edittext_dark">@color/primary_text_default_material_dark</color>
+    <color name="somc_text_color_edittext_light">@color/primary_text_default_material_light</color>
+    <color name="somc_text_color_hint_dark">@color/somc_text_color_edittext_dark</color>
+    <color name="somc_text_color_hint_light">@color/somc_text_color_edittext_light</color>
+    <color name="somc_text_color_button_dark">@color/primary_text_default_material_dark</color>
+    <color name="somc_text_color_button_light">@color/primary_text_default_material_light</color>
+    <color name="somc_text_color_switch_disabled_dark">#4d000000</color>
+    <color name="somc_text_color_switch_unchecked_dark">#de000000</color>
+    <color name="somc_text_color_switch_checked_dark">#ffffffff</color>
+    <color name="somc_text_color_switch_disabled_light">#4d000000</color>
+    <color name="somc_text_color_switch_unchecked_light">#de000000</color>
+    <color name="somc_text_color_switch_checked_light">#ffffffff</color>
+    <color name="somc_text_color_tab_selected_dark">@color/primary_text_default_material_dark</color>
+    <color name="somc_text_color_tab_unselected_dark">@color/secondary_text_default_material_dark</color>
+    <color name="somc_text_color_tab_selected_light">@color/primary_text_default_material_light</color>
+    <color name="somc_text_color_tab_unselected_light">@color/secondary_text_default_material_light</color>
+    <color name="somc_color_edittext_ripple_dark">@color/somc_color_accent_dark</color>
+    <color name="somc_color_edittext_ripple_light">@color/somc_color_accent_light</color>
+    <color name="somc_color_btn_star_on_dark">@color/somc_color_accent_dark</color>
+    <color name="somc_color_btn_star_on_light">@color/somc_color_accent_light</color>
+    <color name="somc_color_tab_unselected_dark">@color/transparent</color>
+    <color name="somc_color_tab_selected_dark">@color/somc_color_accent_dark</color>
+    <color name="somc_color_tab_unselected_light">@color/transparent</color>
+    <color name="somc_color_tab_selected_light">@color/somc_color_accent_light</color>
+
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_0_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_1_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_2_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_3_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_4_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_5_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_0_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_1_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_2_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_3_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_4_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_5_dark">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_0_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_1_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_2_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_3_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_4_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_to_pressed_5_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_0_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_1_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_2_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_3_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_4_light">#00000000</item>
+    <item type="drawable" name="somc_seekbar_thumb_from_pressed_5_light">#00000000</item>
+    <item type="drawable" name="somc_edittext_ripple_mask_dark">@drawable/textfield_activated_mtrl_alpha</item>
+    <item type="drawable" name="somc_edittext_ripple_mask_light">@drawable/textfield_activated_mtrl_alpha</item>
+    <item type="drawable" name="somc_btn_normal_dark">@drawable/somc_btn_dark</item>
+    <item type="drawable" name="somc_btn_pressed_dark">@drawable/somc_btn_normal_dark</item>
+    <item type="drawable" name="somc_btn_focused_dark">@drawable/somc_btn_normal_dark</item>
+    <item type="drawable" name="somc_btn_disabled_dark">@drawable/somc_btn_normal_dark</item>
+    <item type="drawable" name="somc_btn_disabled_focused_dark">@drawable/somc_btn_disabled_dark</item>
+    <item type="drawable" name="somc_btn_normal_light">@drawable/somc_btn_light</item>
+    <item type="drawable" name="somc_btn_pressed_light">@drawable/somc_btn_normal_light</item>
+    <item type="drawable" name="somc_btn_focused_light">@drawable/somc_btn_normal_light</item>
+    <item type="drawable" name="somc_btn_disabled_light">@drawable/somc_btn_normal_light</item>
+    <item type="drawable" name="somc_btn_disabled_focused_light">@drawable/somc_btn_disabled_light</item>
+    <item type="drawable" name="somc_btn_toggle_on_normal_dark">@drawable/somc_btn_toggle_dark</item>
+    <item type="drawable" name="somc_btn_toggle_on_pressed_dark">@drawable/somc_btn_toggle_on_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_on_focused_dark">@drawable/somc_btn_toggle_on_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_on_disabled_dark">@drawable/somc_btn_toggle_on_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_on_disabled_focused_dark">@drawable/somc_btn_toggle_on_disabled_dark</item>
+    <item type="drawable" name="somc_btn_toggle_off_normal_dark">@drawable/somc_btn_toggle_dark</item>
+    <item type="drawable" name="somc_btn_toggle_off_pressed_dark">@drawable/somc_btn_toggle_off_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_off_focused_dark">@drawable/somc_btn_toggle_off_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_off_disabled_dark">@drawable/somc_btn_toggle_off_normal_dark</item>
+    <item type="drawable" name="somc_btn_toggle_off_disabled_focused_dark">@drawable/somc_btn_toggle_off_disabled_dark</item>
+    <item type="drawable" name="somc_btn_toggle_on_normal_light">@drawable/somc_btn_toggle_light</item>
+    <item type="drawable" name="somc_btn_toggle_on_pressed_light">@drawable/somc_btn_toggle_on_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_on_focused_light">@drawable/somc_btn_toggle_on_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_on_disabled_light">@drawable/somc_btn_toggle_on_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_on_disabled_focused_light">@drawable/somc_btn_toggle_on_disabled_light</item>
+    <item type="drawable" name="somc_btn_toggle_off_normal_light">@drawable/somc_btn_toggle_light</item>
+    <item type="drawable" name="somc_btn_toggle_off_pressed_light">@drawable/somc_btn_toggle_off_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_off_focused_light">@drawable/somc_btn_toggle_off_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_off_disabled_light">@drawable/somc_btn_toggle_off_normal_light</item>
+    <item type="drawable" name="somc_btn_toggle_off_disabled_focused_light">@drawable/somc_btn_toggle_off_disabled_light</item>
+    <item type="drawable" name="somc_edittext_focused_dark">@drawable/somc_edittext_activated_dark</item>
+    <item type="drawable" name="somc_edittext_disabled_focused_dark">@drawable/somc_edittext_disabled_dark</item>
+    <item type="drawable" name="somc_edittext_focused_light">@drawable/somc_edittext_activated_light</item>
+    <item type="drawable" name="somc_edittext_disabled_focused_light">@drawable/somc_edittext_disabled_light</item>
+    <item type="drawable" name="somc_btn_star_on_pressed_dark">@drawable/somc_btn_star_on_normal_dark</item>
+    <item type="drawable" name="somc_btn_star_on_focused_dark">@drawable/somc_btn_star_on_normal_dark</item>
+    <item type="drawable" name="somc_btn_star_on_disabled_focused_dark">@drawable/somc_btn_star_on_disabled_dark</item>
+    <item type="drawable" name="somc_btn_star_off_pressed_dark">@drawable/somc_btn_star_on_pressed_dark</item>
+    <item type="drawable" name="somc_btn_star_off_focused_dark">@drawable/somc_btn_star_off_normal_dark</item>
+    <item type="drawable" name="somc_btn_star_off_disabled_focused_dark">@drawable/somc_btn_star_off_disabled_dark</item>
+    <item type="drawable" name="somc_btn_star_on_pressed_light">@drawable/somc_btn_star_on_normal_light</item>
+    <item type="drawable" name="somc_btn_star_on_focused_light">@drawable/somc_btn_star_on_normal_light</item>
+    <item type="drawable" name="somc_btn_star_on_disabled_focused_light">@drawable/somc_btn_star_on_disabled_light</item>
+    <item type="drawable" name="somc_btn_star_off_pressed_light">@drawable/somc_btn_star_on_pressed_light</item>
+    <item type="drawable" name="somc_btn_star_off_focused_light">@drawable/somc_btn_star_off_normal_light</item>
+    <item type="drawable" name="somc_btn_star_off_disabled_focused_light">@drawable/somc_btn_star_off_disabled_light</item>
+    <item type="drawable" name="somc_tab_unselected_pressed_dark">@drawable/somc_tab_unselected_dark</item>
+    <item type="drawable" name="somc_tab_unselected_focused_dark">@drawable/somc_tab_unselected_dark</item>
+    <item type="drawable" name="somc_tab_selected_pressed_dark">@drawable/somc_tab_selected_dark</item>
+    <item type="drawable" name="somc_tab_selected_focused_dark">@drawable/somc_tab_selected_dark</item>
+    <item type="drawable" name="somc_tab_unselected_pressed_light">@drawable/somc_tab_unselected_light</item>
+    <item type="drawable" name="somc_tab_unselected_focused_light">@drawable/somc_tab_unselected_light</item>
+    <item type="drawable" name="somc_tab_selected_pressed_light">@drawable/somc_tab_selected_light</item>
+    <item type="drawable" name="somc_tab_selected_focused_light">@drawable/somc_tab_selected_light</item>
+    <item type="drawable" name="somc_item_bg_pressed_dark">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_focused_dark">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_disabled_dark">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_pressed_light">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_focused_light">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_disabled_light">@color/transparent</item>
+    <item type="drawable" name="somc_item_bg_borderless_dark">@drawable/somc_item_bg_borderless_ripple_dark</item>
+    <item type="drawable" name="somc_item_bg_borderless_light">@drawable/somc_item_bg_borderless_ripple_light</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_normal_dark">#00000000</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_pressed_dark">#00000000</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_focused_dark">#00000000</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_normal_light">#00000000</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_pressed_light">#00000000</item>
+    <item type="drawable" name="somc_ratingbar_star_secondary_focused_light">#00000000</item>
+    <item type="drawable" name="somc_bg_dark_v2">@drawable/somc_bg_dark</item>
+    <item type="drawable" name="somc_bg_light_v2">@drawable/somc_bg_light</item>
 </resources>
